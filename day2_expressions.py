@@ -1,3 +1,18 @@
+# Day 2: Expressions and Calculations
+# Topics:
+# - Variables and data types
+# - Arithmetic operations (+, -, *, /, //, %)
+# - Type conversion using int() and float()
+# - Taking numeric input from users
+#
+# Programs included:
+# - Addition of two numbers
+# - Celsius to Fahrenheit conversion
+# - Simple Interest calculation
+#
+# Goal:
+# Understand how Python evaluates expressions and performs calculations
+
 # Program 1: Add two numbers
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))

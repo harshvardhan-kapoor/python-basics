@@ -1,3 +1,6 @@
+# Day 4: Functions
+# Learned def, parameters, return
+
 def add_numbers(a, b):
     return a + b
 

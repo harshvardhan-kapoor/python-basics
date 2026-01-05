@@ -1,3 +1,6 @@
+
+# Day 3: Conditional statements
+# Learned if, elif, else
 print("---- Even or Odd Check ----")
 n = int(input("Enter a number: "))
 

@@ -1,33 +1,42 @@
 # Day 4: Functions
-# Learned def, parameters, return
+# Topics:
+# - Defining functions
+# - Passing parameters
+# - Returning values
+# - Reusing logic
 
-def add_numbers(a, b):
-    return a + b
+def add_numbers(first_number, second_number):
+    """Returns the sum of two numbers"""
+    return first_number + second_number
 
-x = int(input("Enter first number: "))
-y = int(input("Enter second number: "))
 
-result = add_numbers(x, y)
-print("Sum:", result)
-
-print("\n-----------------------------\n")
-
-def check_even_odd(n):
-    if n % 2 == 0:
+def check_even_odd(number):
+    """Returns whether a number is Even or Odd"""
+    if number % 2 == 0:
         return "Even"
     else:
         return "Odd"
+
+
+def calculate_simple_interest(principal, rate, time):
+    """Returns simple interest value"""
+    return (principal * rate * time) / 100
+
+
+# ---- Using the functions ----
+
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+print("Sum:", add_numbers(x, y))
+
+print("\n-----------------------------\n")
 
 num = int(input("Enter a number: "))
 print("Number is:", check_even_odd(num))
 
 print("\n-----------------------------\n")
 
-def simple_interest(p, r, t):
-    return (p * r * t) / 100
-
 p = float(input("Enter principal: "))
 r = float(input("Enter rate: "))
 t = float(input("Enter time: "))
-
-print("Simple Interest:", simple_interest(p, r, t))
+print("Simple Interest:", calculate_simple_interest(p, r, t))
